@@ -1,4 +1,3 @@
-# the-best-fruit
+# The Best Fruit website
 
-TheBestFruit: realizado con HTML/CSS/JS
-
+The Best Fruit is built with HTML5 CSS3 and JS. You can visit it at:
