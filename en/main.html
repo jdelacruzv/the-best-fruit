@@ -14,12 +14,13 @@
                 <nav class="menu">
                     <ul class="menu-items">
                         <li><a class="menu-link" href="#">Home</a></li>
+                        <li><a class="menu-link" href="#tienda">Store</a></li>
                         <li><a class="menu-link" href="#productos">Products</a></li>
                         <li><a class="menu-link" href="#quienes">About</a></li>
                         <li><a class="menu-link" href="#contacto">Contact</a></li>
                     </ul>
                 </nav>
-                <figure>
+                <figure class="container-btn">
                     <a href="">
                         <img class="flat-en" src="../img/eng.png" alt="Round logo of the English flag" title="English"  style="background-color:  #173d39;">
                     </a>
@@ -45,11 +46,22 @@
             <div class="main-content"> 
                 <h1>The Best Fruit</h1>
                 <h3>Frozen fruit pulps</h3>
+                <div class="link">
+                    <a class="link__text" href="#tienda">Go to the store <span class="link__arrow">&#8595;</span></a>
+                </div>
             </div>
+        </section>
+
+        <section id="tienda" class="store">
+            <h2>Store</h2>
+            <figure>
+                <img src="../img/store.svg" alt="">
+            </figure>
+            <hr class="line-horizontal">
         </section>
         
         <section id="productos" class="products">
-            <div class="wrapper">
+            <!-- <div class="wrapper"> -->
                 <h2>Our products</h2>
                 <article class="product">
                     <div class="product-text">
@@ -117,7 +129,7 @@
                     </figure>
                 </article>
                 <hr class="line-horizontal">
-            </div>
+            <!-- </div> -->
         </section>
         
         <section id="quienes" class="about-us">
@@ -175,41 +187,44 @@
                         </div>
                     </div>
                 </article>
-                <hr class="line-horizontal">
+                <!-- <hr class="line-horizontal"> -->
             </div>
         </section>
 
         <section id="contacto" class="contacts">
-            <div class="wrapper">
-                <h2>Contact us</h2>
-                <div class="contact">
-                    <form action="send.php" method="POST" class="contact-form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Mensaje..." required></textarea>
-                        <button type="submit" id="btn-send">Send</button>
-                    </form>
-                    <hr class="line-vertical">
-                    <ul class="contact-menu">
-                        <li>
-                            <img src="../img/phone.png" alt="">
-                            <p>(+57) (4) 358 2020 /  310-7895798</p>
-                        </li>
-                        <li>
-                            <img src="../img/email.png" alt="">
-                            <p>comercial@thebestfruit.com</p>
-                        </li>
-                        <li>
-                            <img src="../img/address.png" alt="">
-                            <p>Calle 60 No. 76 - 82 | Rionegro - Antioquia</p>
-                        </li>
-                    </ul>
-                </div>
+            <h2>Contact us</h2>
+            <div class="contact">
+                <form action="send.php" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message..." required></textarea>
+                    <button type="submit" id="btn-send">Send</button>
+                </form>
+                <ul class="contact-menu">
+                    <li><p>Calle 60 # 76 - 82 Rionegro</p></li>
+                    <li><p>Antioquia - Colombia</p></li>
+                    <li><p>América del Sur</p></li><br>
+                    <li>
+                        <img src="../img/phone.png" alt="Telefono">
+                        <p>(+57) (4) 358 2020</p>
+                    </li>
+                    <li>
+                        <img src="../img/mobile.png" alt="Celular">
+                        <p>(+57) 300 792 5298</p>
+                    </li>
+                    <li>
+                        <img src="../img/mail.png" alt="Correo electrónico">
+                        <p>info@thebestfruit.com</p>
+                    </li>
+                </ul>  
+                <figure class="contact-map">
+                    <img src="../img/map.png" alt="Localización de colombia en el mundo">
+                </figure>  
             </div>
         </section>
         
         <footer class="footer">
-            <p>Diseño y Desarrollo &copy; Sysdelsan</p>
+            <p>Copyright &copy; 2020 The best fruit - All Rights Reserved</p>
         </footer>
 
         <script src="../js/main.js"></script>

@@ -31,6 +31,10 @@ p {
     color: #555555;
 }
 
+.line-horizontal {
+    margin-top: 5%;
+}
+
 /* ==================== HEADER ==================== */
 
 .header {
@@ -134,7 +138,7 @@ p {
     height: calc(100vh - 60px);
     position: relative;
     overflow: hidden;
-    background-color: rgba(4, 128, 66, 0.7);
+    background-color: rgba(4, 128, 66, 0.6);
 }
 
 .main ul {
@@ -204,6 +208,44 @@ p {
     color: #000000;
 }
 
+.link {
+    margin-top: 40px;
+    font-size: 1.2rem; 
+}
+
+.link__text {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border: 1px solid #e61414;
+    background-color: #e61414;
+    color: #ffffff;  
+    border-radius: 5px; 
+}
+
+.link__arrow {
+    margin-left: 5px;
+}
+
+.link__text:hover {
+    border: 1px solid #880606;
+    background-color: #880606;
+}
+
+/* ==================== STORE ==================== */
+
+.store {
+    padding: 3.8rem 3.2rem 0px 3.2rem;
+}
+
+.store figure {
+    width: 100%;
+}
+
+.store img {
+    width: 100%;
+}
+
 /* ==================== PRODUCTS ==================== */
 
 .products {
@@ -259,10 +301,6 @@ p {
     text-align : justify;
     line-height: 1.9rem;
     font-size: 1.2rem;
-}
-
-.line-horizontal {
-    margin-top: 5%;
 }
 
 .about-company_details {
@@ -325,6 +363,7 @@ p {
 .contacts {
     padding: 3.8rem 3.2rem 2rem 3.2rem;
     background-color: #111111;
+    margin-top: 5%;
 }
 
 .contacts h2 {
