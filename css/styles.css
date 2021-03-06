@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 70px;
     font-size: 16px;
 }
 
@@ -38,20 +38,20 @@ p {
 /* ==================== HEADER ==================== */
 
 .header {
+    width: 100%;
+    height: 70px;
     background-color: #184d47;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 800;
 }
 
-.brand {
+.header__brand {
     color: #ffffff;
     margin-left: 1.3rem;
     font-size: 1.5rem;
@@ -59,47 +59,52 @@ p {
     text-decoration: none;
 }
 
-.menu {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 1.3rem;
 }
 
-.menu-items {
+.menu {
     list-style: none;
-    display: flex;
+    display: inherit;
+    align-items: inherit;
 }
 
-.menu-items li {
-    border-radius: 1rem;
-}
-
-.menu-items li a {
+.menu__link {
     display: block;
-    /* Quita el underline que viene por defecto */
     text-decoration: none;
     color: #ebf3f5;
     padding: 0.5rem 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
-.menu-items li:hover, li:active {
+.menu__link:hover, .menu__link:active {
     background-color: #10643d;
     transition: 0.4s;
+    border-radius: 1rem;
 }
 
-.container-btn {
-    height: inherit;
-    margin-right: 1.3rem;
+.menu__img  {
+    width: 25px;
+    height: 25px;
+}
+
+.flag {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.flag__link {
+    margin: 0;
+    padding: 0;
 }
 
 /* ==================== BOTON HAMBURGER ==================== */
 
-.btn-menu {
+.btn-hamburger {
     width: 30px;
     margin: 0;
     display: none;
@@ -107,9 +112,7 @@ p {
     z-index: 1000;
 }
 
-.line-1,
-.line-2,
-.line-3 {
+.line-1, .line-2, .line-3 {
     width: inherit;
     height: 5px;
     background-color: #ffffff;
@@ -118,7 +121,7 @@ p {
 }
 
 .active .line-1 {
-    transform: rotate(-45deg) translate(-2px, -7px); /*-8,0*/
+    transform: rotate(-45deg) translate(-2px, -7px);
     position: absolute;
 } 
 
@@ -127,7 +130,7 @@ p {
 }
 
 .active .line-3 {
-    transform: rotate(45deg) translate(-13px, -6px); /*-7,0*/
+    transform: rotate(45deg) translate(-13px, -6px);
     position: absolute;
 }
 
@@ -179,7 +182,7 @@ p {
 .main-content {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 22, 40, 0.7);
+    background-color: rgba(0, 22, 40, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -232,24 +235,115 @@ p {
     background-color: #880606;
 }
 
-/* ==================== STORE ==================== */
+/* ==================== CATALOG ==================== */
 
-.store {
-    padding: 3.8rem 3.2rem 0px 3.2rem;
+.catalog {
+    padding: 4.8rem 3.2rem 0px 3.2rem;
 }
 
-.store figure {
+.catalog__items {
+    /* border: 1px solid red; */
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.store img {
+.card {
+    border: 1px solid #999999;
+    width: 230px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.figure {
+    height: 180px;
+    margin: auto;
+}
+
+.figure__img {
     width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card__offer {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #e40017;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    transform: rotate(-45deg);
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price__normal {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555555;
+}
+
+.price__normal--red {
+    color: #e40017;
+}
+
+.price__discount {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #555555;
+    text-decoration: line-through;
+}
+
+.price__line {
+    margin: 0 5px;
+}
+
+.card__text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button  {
+    padding: 0.5rem 2rem;
+    border: 1px solid #184d47;
+    background-color: #184d47;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    border: 1px solid #10643d;
+    background-color: #10643d;
+}
+
+.button__link {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* ==================== PRODUCTS ==================== */
 
 .products {
-    padding: 3.8rem 3.2rem 0px 3.2rem;
+    padding: 4.8rem 3.2rem 0px 3.2rem;
 }
 
 .product {
@@ -289,7 +383,7 @@ p {
 /* ==================== ABOUT-US ==================== */
 
 .about-us {
-    padding: 3.8rem 3.2rem 0px 3.2rem;
+    padding: 4.8rem 3.2rem 0px 3.2rem;
 }
 
 .about {
@@ -361,7 +455,7 @@ p {
 /* ==================== CONTACTS ==================== */
 
 .contacts {
-    padding: 3.8rem 3.2rem 2rem 3.2rem;
+    padding: 4.8rem 3.2rem 2rem 3.2rem;
     background-color: #111111;
     margin-top: 5%;
 }
@@ -384,7 +478,7 @@ p {
     width: 30rem;
 }
 
-input, textarea  {
+select, input, textarea  {
     margin-bottom: 1.3rem;
     border: solid 1px #333333;
     border-radius: 5px;
@@ -400,21 +494,6 @@ textarea {
     max-width: 100%;
     min-height: 150px;
     max-height: 150px;
-}
-
-button  {
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-    font-size: 1.3rem;
-    border: 1px solid #184d47;
-    background-color: #184d47;
-    border-radius: 5px;
-    color: #ffffff;
-}
-
-button:hover {
-    border: 1px solid #10643d;
-    background-color: #10643d;
 }
 
 .contact-menu {
@@ -438,7 +517,7 @@ button:hover {
     font-size: 1rem;
     color: #ebf3f5;
     margin-left: 5px;
-    line-height: 130%;
+    line-height: 150%;
 }
 
 .contact-map {
@@ -505,16 +584,16 @@ button:hover {
         padding: 0 1rem;
     }
 
-    .brand, .container-btn  {
+    .header__brand, .container-btn  {
         margin: 0;
     }
 
-    .btn-menu {
+    .btn-hamburger {
         display: block;
         margin-left: 0.5rem;
     }
 
-    .menu-items {
+    .menu {
         position: absolute;
         z-index: 900;
         top: -200vh;
@@ -526,21 +605,21 @@ button:hover {
         background-color:rgba(41, 41, 41, 0.9);
         text-align: center;
         transition: all 1s;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
-    .menu-items.show {
+    .menu.show {
         display: block;
         top: 60px;
     }
 
-    .menu-items li {
-        margin-top: 2rem;
-        line-height: 2rem;
-        text-transform: uppercase;
+    .menu a {
+        margin-top: 1rem;
+        line-height: 1rem;
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: normal;
         border-radius: 0;    
+        letter-spacing: 1px;
     }
 
     .products {

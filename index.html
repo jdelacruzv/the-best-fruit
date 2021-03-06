@@ -10,32 +10,41 @@
     </head>
     <body>
         <header class="header">
-                <a class="brand" href="#">The Best Fruit</a>
-                <nav class="menu">
-                    <ul class="menu-items">
-                        <li><a class="menu-link" href="#">Inicio</a></li>
-                        <li><a class="menu-link" href="#tienda">Tienda</a></li>
-                        <li><a class="menu-link" href="#productos">Productos</a></li>
-                        <li><a class="menu-link" href="#quienes">Quienes somos</a></li>
-                        <li><a class="menu-link" href="#contacto">Contacto</a></li>
+                <a class="header__brand" href="#">The Best Fruit</a>
+                <nav class="header__nav">
+                    <ul class="menu">
+                        <li><a class="menu__link" href="#">Inicio</a></li>
+                        <li><a class="menu__link" href="#tienda">Tienda</a></li>
+                        <li><a class="menu__link" href="#productos">Productos</a></li>
+                        <li><a class="menu__link" href="#nosotros">Nosotros</a></li>
+                        <li><a class="menu__link" href="#contacto">Contacto</a></li>
+                        <li>
+                            <a href="shopping.html" class="menu__link">
+                                <img class="menu__img" src="img/shopping-cart.png" alt="Logo carrito de compras" title="Carrito de compras">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="menu__link">
+                                <img class="menu__img" src="img/user.png" alt="Logo usuario" title="Login"> 
+                            </a>
+                        </li>
+                        <li>
+                            <figure class="flag">
+                                <a href="" class="flag__link menu__link">
+                                    <img class="flag__img" src="img/esp.png" alt="Logo redondo de la bandera española" title="Español" style="background-color:  #173d39;">
+                                </a>            
+                                <a href="en/main.html" class="flag__link menu__link">
+                                    <img class="flag__img" src="img/eng.png" alt="Logo redondo de la bandera inglesa" title="Inglés">
+                                </a>
+                            </figure>
+                        </li>
                     </ul>
-                </nav>
-                <!-- <div>
-                    
-                </div> -->
-                <figure class="container-btn">
-                    <a href="">
-                        <img src="img/esp.png" alt="Logo redondo de la bandera española" title="Español" style="background-color:  #173d39;">
-                    </a>
-                    <a href="en/main.html">
-                        <img src="img/eng.png" alt="Logo redondo de la bandera inglesa" title="Inglés">
-                    </a>
-                    <div class="btn-menu">
+                    <div class="btn-hamburger">
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                         <div class="line-3"></div>
                     </div>
-                </figure>
+                </nav>
         </header>
 
         <section class="main">
@@ -55,11 +64,147 @@
             </div>
         </section>
 
-        <section id="tienda" class="store">
-            <h2>Tienda</h2>
-            <figure>
-                <img src="img/store.svg" alt="">
-            </figure>
+        <section id="tienda" class="catalog">
+            <h2>Catálogo de productos</h2>
+            <article class="catalog__items">
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mango.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal price__normal--red">$4.40</span>
+                        <span class="price__line">&#8211;</span>
+                        <span class="price__discount">$5.50</span>
+                    </div>
+                    <p class="card__text">Pulpa mango congelada 500gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/pinia.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal price__normal--red">$4.40</span>
+                        <span class="price__line">&#8211;</span>
+                        <span class="price__discount">$5.50</span>
+                    </div>
+                    <p class="card__text">Pulpa piña congelada 500gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/uchuva.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal price__normal--red">$4.40</span>
+                        <span class="price__line">&#8211;</span>
+                        <span class="price__discount">$5.50</span>
+                    </div>
+                    <p class="card__text">Pulpa uchuva congelada 500gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mora.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal price__normal--red">$4.40</span>
+                        <span class="price__line">&#8211;</span>
+                        <span class="price__discount">$5.50</span>
+                    </div>
+                    <p class="card__text">Pulpa mora congelada 500gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/lulo.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal price__normal--red">$4.40</span>
+                        <span class="price__line">&#8211;</span>
+                        <span class="price__discount">$5.50</span>
+                    </div>
+                    <p class="card__text">Pulpa lulo congelada 500gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+            </article>
+            <article class="catalog__items">
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mango.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal">$3.50</span>
+                    </div>
+                    <p class="card__text">Pulpa mango congelada 300gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/pinia.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal">$3.50</span>
+                    </div>
+                    <p class="card__text">Pulpa piña congelada 300gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/uchuva.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal">$3.50</span>
+                    </div>
+                    <p class="card__text">Pulpa uchuva congelada 300gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mora.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal">$3.50</span>
+                    </div>
+                    <p class="card__text">Pulpa mora congelada 300gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/lulo.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <span class="price__normal">$3.50</span>
+                    </div>
+                    <p class="card__text">Pulpa lulo congelada 300gr.</p>
+                    <button class="button">
+                        <a class="button__link" href="">Añadir al carrito</a>
+                    </button>
+                </div>
+            </article>
             <hr class="line-horizontal">
         </section>
 
@@ -135,7 +280,7 @@
             <!-- </div> -->
         </section>
         
-        <section id="quienes" class="about-us">
+        <section id="nosotros" class="about-us">
             <div class="wrapper">
                 <h2>Quiénes Somos</h2>
                 <article class="about">
@@ -203,10 +348,19 @@
             <h2>Contáctanos</h2>
             <div class="contact">
                 <form action="send.php" method="POST" class="contact-form">
+                    <select name="cars" id="cars">
+                        <option value="volvo">Asunto:</option>
+                        <option value="general">General</option>
+                        <option value="peticion">Peticiones</option>
+                        <option value="queja">Quejas</option>
+                        <option value="reclamo">Reclamos</option>
+                        <option value="sugerencia">Sugerencias</option>
+                        <option value="denuncia">Denuncias</option>
+                    </select>
                     <input type="text" name="name" placeholder="Nombre" required>
                     <input type="email" name="email" placeholder="Correo electrónico" required>
                     <textarea name="message" placeholder="Mensaje..." required></textarea>
-                    <button type="submit">Enviar</button>
+                    <button class="button" type="submit">Enviar</button>
                 </form>
                 <ul class="contact-menu">
                     <li><p>Calle 60 # 76 - 82 Rionegro</p></li>
@@ -222,7 +376,15 @@
                     </li>
                     <li>
                         <img src="img/mail.png" alt="Correo electrónico">
-                        <p>info@thebestfruit.com</p>
+                        <p>gpsanchez815@misena.edu.co</p>
+                    </li>
+                    <li>
+                        <img src="img/mail.png" alt="Correo electrónico">
+                        <p>info@misena.edu.co</p>
+                    </li>
+                    <li>
+                        <img src="img/mail.png" alt="Correo electrónico">
+                        <p>info@misena.edu.co</p>
                     </li>
                 </ul>    
                 <figure class="contact-map">
