@@ -6,23 +6,17 @@
         <title>The Best Fruit</title>
         <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
         <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"/>
     </head>
     <body>
         <header class="header">
-                <a class="header__brand" href="#">The Best Fruit</a>
+                <a class="header__brand" href="../en/main.html">The Best Fruit</a>
                 <nav class="header__nav">
                     <ul class="menu">
                         <li><a class="menu__link" href="#">Home</a></li>
-                        <li><a class="menu__link" href="#tienda">Store</a></li>
+                        <li><a class="menu__link" href="../store.html">Store</a></li>
                         <li><a class="menu__link" href="#productos">Products</a></li>
                         <li><a class="menu__link" href="#quienes">About</a></li>
                         <li><a class="menu__link" href="#contacto">Contact</a></li>
-                        <li>
-                            <a href="shopping.html" class="menu__link">
-                                <img class="menu__img" src="../img/shopping-cart.png" alt="Shopping cart logo" title="Shopping cart">
-                            </a>
-                        </li>
                         <li>
                             <a href="login.html" class="menu__link">
                                 <img class="menu__img" src="../img/user.png" alt="User logo" title="Login"> 
@@ -49,166 +43,23 @@
         </header>
 
         <section class="main">
-            <ul>
-                <li><img src="../img/mango.jpg" alt="Mango fruit"></li>
-                <li><img src="../img/pinia.jpg" alt="Pineapple fruit"></li>
-                <li><img src="../img/uchuva.jpg" alt="Gooseberry fruit"></li>
-                <li><img src="../img/mora.jpg" alt="Blackberry fruit"></li>
-                <li><img src="../img/lulo.jpg" alt="Lulo fruit"></li>
+            <ul class="main__menu">
+                <li class="main__list"><img class="main__img" src="../img/mango.jpg" alt="Mango fruit"></li>
+                <li class="main__list"><img class="main__img" src="../img/pinia.jpg" alt="Pineapple fruit"></li>
+                <li class="main__list"><img class="main__img"  src="../img/mora.jpg" alt="Blackberry fruit"></li>
+                <li class="main__list"><img class="main__img"  src="../img/lulo.jpg" alt="Lulo fruit"></li>
             </ul>
             <div class="main-content"> 
                 <h1>The Best Fruit</h1>
                 <h3>Frozen fruit pulps</h3>
-                <div class="link">
-                    <a class="link__text" href="#tienda">Go to the store <span class="link__arrow">&#8595;</span></a>
-                </div>
+                <button class="btn">
+                    <a class="btn__text" href="../store.html">
+                        <img class="btn__img" src="../img/shopping-cart.png" alt="Carrito de compra"> Store
+                    </a>
+                </button>
             </div>
         </section>
 
-        <section id="tienda" class="catalog">
-            <h2>Product catalog</h2>
-            <article class="catalog__items">
-                <div class="card">
-                    <span class="card__offer">offer</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/mango.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal price__normal--red">$4.40</span>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__discount">$5.50</span>
-                    </div>
-                    <p class="card__text">Frozen mango pulp 500gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">offer</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/pinia.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal price__normal--red">$4.40</span>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__discount">$5.50</span>
-                    </div>
-                    <p class="card__text">Frozen pineapple pulp 500gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">offer</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/uchuva.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal price__normal--red">$4.40</span>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__discount">$5.50</span>
-                    </div>
-                    <p class="card__text">Frozen gosseberry pulp 500gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">offer</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/mora.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal price__normal--red">$4.40</span>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__discount">$5.50</span>
-                    </div>
-                    <p class="card__text">Frozen blackberry pulp 500gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">offer</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/lulo.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal price__normal--red">$4.40</span>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__discount">$5.50</span>
-                    </div>
-                    <p class="card__text">Frozen lulo pulp 500gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-            </article>
-            <article class="catalog__items">
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/mango.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal">$3.50</span>
-                    </div>
-                    <p class="card__text">Frozen mango pulp 300gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/pinia.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal">$3.50</span>
-                    </div>
-                    <p class="card__text">Frozen pineapple pulp 300gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/uchuva.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal">$3.50</span>
-                    </div>
-                    <p class="card__text">Frozen gosseberry pulp 300gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/mora.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal">$3.50</span>
-                    </div>
-                    <p class="card__text">Frozen blackberry pulp 300gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="../img/lulo.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <span class="price__normal">$3.50</span>
-                    </div>
-                    <p class="card__text">Frozen lulo pulp 300gr.</p>
-                    <button class="button">
-                        <a class="button__link" href="">Add to cart</a>
-                    </button>
-                </div>
-            </article>
-            <hr class="line-horizontal">
-        </section>
-        
         <section id="productos" class="products">
             <!-- <div class="wrapper"> -->
                 <h2>Our products</h2>

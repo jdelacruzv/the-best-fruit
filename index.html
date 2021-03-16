@@ -7,7 +7,6 @@
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
         <link rel="stylesheet" href="css/styles.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"/>
-        <link rel="stylesheet" href="css/sweetalert2.min.css">
     </head>
     <body>
         <header class="header">
@@ -15,15 +14,10 @@
                 <nav class="header__nav">
                     <ul class="menu">
                         <li><a class="menu__link" href="#">Inicio</a></li>
-                        <li><a class="menu__link" href="#tienda">Tienda</a></li>
+                        <li><a class="menu__link" href="store.html">Tienda</a></li>
                         <li><a class="menu__link" href="#productos">Productos</a></li>
                         <li><a class="menu__link" href="#nosotros">Nosotros</a></li>
                         <li><a class="menu__link" href="#contacto">Contacto</a></li>
-                        <li>
-                            <figure id="cart" class="menu__link">
-                                <img class="menu__img" src="img/shopping-cart.png" alt="Logo carrito de compras" title="Carrito de compras">
-                            </figure>
-                        </li>
                         <li>
                             <figure id="user" class="menu__link">
                                 <img class="menu__img" src="img/user.png" alt="Logo usuario" title="Login | Register"> 
@@ -49,164 +43,30 @@
         </header>
         
         <section class="main">
-            <ul>
-                <li><img src="img/mango.jpg" alt="Fruta mango"></li>
-                <li><img src="img/pinia.jpg" alt="Fruta piña"></li>
-                <li><img src="img/uchuva.jpg" alt="Fruta uchuva"></li>
-                <li><img src="img/mora.jpg" alt="Fruta mora"></li>
-                <li><img src="img/lulo.jpg" alt="Fruta lulo"></li>
+            <ul class="main__menu">
+                <li class="main__list">
+                    <img class="main__img" src="img/mango.jpg" alt="Fruta mango">
+                </li>
+                <li class="main__list">
+                    <img class="main__img" src="img/pinia.jpg" alt="Fruta piña">
+                </li>
+                <li class="main__list">
+                    <img class="main__img" src="img/mora.jpg" alt="Fruta mora">
+                </li>
+                <li class="main__list">
+                    <img class="main__img" src="img/lulo.jpg" alt="Fruta lulo">
+                </li>
             </ul>
             <div class="main-content"> 
                 <h1>The Best Fruit</h1>
-                <h3>Pulpas de frutas congeladas</h3>
-                <div class="link">
-                    <a class="link__text" href="#tienda">Ir a la tienda <span class="link__arrow">&#8595;</span></a>
-                </div>
+                <h3>Lo mejor en pulpa de frutas congeladas</h3>
+                <!-- <h3>Si te alimentas bien, te sientes bien</h3> -->
+                <button class="btn">
+                    <a class="btn__text" href="store.html">
+                        <img class="btn__img" src="img/shopping-cart.png" alt="Carrito de compra"> Tienda
+                    </a>
+                </button>
             </div>
-        </section>
-
-        <section id="tienda" class="catalog">
-            <h2>Catálogo de productos</h2>
-            <article class="catalog__items" id="catalog__items">
-                <div class="card">
-                    <span class="card__offer">oferta</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="img/mango.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__offer">4.40</span></p>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__normal price__normal--small">$5.50</span>
-                    </div>
-                    <p class="card__text">Pulpa mango congelada 500gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="1">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">oferta</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="img/pinia.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__offer">4.40</span></p>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__normal price__normal--small">$5.50</span>
-                    </div>
-                    <p class="card__text">Pulpa piña congelada 500gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="2">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">oferta</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="img/uchuva.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__offer">4.40</span></p>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__normal price__normal--small">$5.50</span>
-                    </div>
-                    <p class="card__text">Pulpa uchuva congelada 500gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="3">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">oferta</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="img/mora.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__offer">4.40</span></p>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__normal price__normal--small">$5.50</span>
-                    </div>
-                    <p class="card__text">Pulpa mora congelada 500gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="4">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <span class="card__offer">oferta</span>
-                    <figure class="figure">
-                        <img class="figure__img" src="img/lulo.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__offer">4.40</span></p>
-                        <span class="price__line">&#8211;</span>
-                        <span class="price__normal price__normal--small">$5.50</span>
-                    </div>
-                    <p class="card__text">Pulpa lulo congelada 500gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="5">Agregar al carrito</a>
-                    </button>
-                </div>
-            <!-- </article>
-            <article class="catalog__items"> -->
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="img/mango.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">3.50</span></p>
-                    </div>
-                    <p class="card__text">Pulpa mango congelada 300gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="6">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="img/pinia.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">3.50</span></p>
-                    </div>
-                    <p class="card__text">Pulpa piña congelada 300gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="7">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="img/uchuva.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">3.50</span></p>
-                    </div>
-                    <p class="card__text">Pulpa uchuva congelada 300gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="8">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="img/mora.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">3.50</span></p>
-                    </div>
-                    <p class="card__text">Pulpa mora congelada 300gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="9">Agregar al carrito</a>
-                    </button>
-                </div>
-                <div class="card">
-                    <figure class="figure">
-                        <img class="figure__img" src="img/lulo.jpg" alt="">
-                    </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">3.50</span></p>
-                    </div>
-                    <p class="card__text">Pulpa lulo congelada 300gr.</p>
-                    <button class="button">
-                        <a href="" class="button__link add-cart" data-id="10">Agregar al carrito</a>
-                    </button>
-                </div>
-            </article>
-            <hr class="line-horizontal">
         </section>
 
         <section id="productos" class="products">
@@ -240,22 +100,6 @@
                 </article>
                 <article class="product">
                     <div class="product-text">
-                        <h3 class="product-title">Pulpa congelada de Uchuva</h3>
-                        <p class="product-description">
-                            Es un producto 100% natural, sin preservantes, ni aditivos, obtenido directamente por la extracción de frutas frescas, sanas y maduras, conservando su textura, aroma, sabor y nutrientes. Es rica en vitaminas A, C, E y contiene altos porcentajes de magnesio, potasio, fibra y ácidos depurativos.<br><br>
-                            Entre sus beneficios, se destaca por la estimulación de las defensas, la prevención de enfermedades degenerativas, la protección de la piel y las mucosas. Dentro de sus ventajas, se destaca la forma de mantener su sabor para preparar jugos, cócteles, batidos, postres, etc. en el momento que se necesite.<br><br>
-                            La pulpa de fruta congelada puede conservarse por mucho más tiempo que la fruta y tiene poca o nula pérdida de nutrientes, a diferencia de la pulpa pasteurizada. La pulpa congelada se puede mantener y utilizar hasta por un año.
-                        </p>
-                    </div>
-                    <figure class="product-container_image">
-                        <img class="product-image" src="img/uchuva.jpg" alt="Fruta uchuva" title="Uchuva">
-                    </figure>
-                </article>
-                <article class="product">
-                    <figure class="product-container_image">
-                        <img class="product-image" src="img/mora.jpg" alt="Fruta mora" title="Mora">
-                    </figure>
-                    <div class="product-text">
                         <h3 class="product-title">Pulpa congelada de Mora</h3>
                         <p class="product-description">
                             Es un producto 100% natural, sin preservantes, ni aditivos, obtenido directamente por la extracción de frutas frescas, sanas y maduras, conservando su textura, aroma, sabor y nutrientes. Es rica en vitaminas A, C, E y contiene altos porcentajes de magnesio, potasio, fibra y ácidos depurativos.<br><br>
@@ -263,8 +107,14 @@
                             La pulpa de fruta congelada puede conservarse por mucho más tiempo que la fruta y tiene poca o nula pérdida de nutrientes, a diferencia de la pulpa pasteurizada. La pulpa congelada se puede mantener y utilizar hasta por un año.
                         </p>
                     </div>
+                    <figure class="product-container_image">
+                        <img class="product-image" src="img/mora.jpg" alt="Fruta mora" title="Mora">
+                    </figure>
                 </article>
                 <article class="product">
+                    <figure class="product-container_image">
+                        <img class="product-image" src="img/lulo.jpg" alt="Fruta lulo" title="Lulo">
+                    </figure>
                     <div class="product-text">
                         <h3 class="product-title">Pulpa congelada de Lulo</h3>
                         <p class="product-description">
@@ -273,16 +123,13 @@
                             La pulpa de fruta congelada puede conservarse por mucho más tiempo que la fruta y tiene poca o nula pérdida de nutrientes, a diferencia de la pulpa pasteurizada. La pulpa congelada se puede mantener y utilizar hasta por un año.
                         </p>
                     </div>
-                    <figure class="product-container_image">
-                        <img class="product-image" src="img/lulo.jpg" alt="Fruta lulo" title="Lulo">
-                    </figure>
                 </article>
                 <hr class="line-horizontal">
             <!-- </div> -->
         </section>
         
         <section id="nosotros" class="about-us">
-            <div class="wrapper">
+            <!-- <div class="wrapper"> -->
                 <h2>Quiénes Somos</h2>
                 <article class="about">
                     <p class="about-company">
@@ -303,8 +150,9 @@
                             <p>Posicionarnos el 2025 como la empresa más reconocida en la distribución internacional de pulpa de fruta congelada, a través de la transparencia corporativa, así como la credibilidad y confianza de nuestros clientes. </p>
                         </div>
                     </div>
+                    <hr class="line-horizontal">
                 </article>
-                <hr class="line-horizontal">
+                <!-- <hr class="line-horizontal"> -->
                 <article class="about-political">
                     <h3>Políticas Corporativas</h3>
                     <div class="about-political_description">
@@ -341,22 +189,21 @@
                         </div>
                     </div>
                 </article>
-                <!-- <hr class="line-horizontal"> -->
-            </div>
+            <!-- </div> -->
         </section>
 
         <section id="contacto" class="contacts">
             <h2>Contáctanos</h2>
             <div class="contact">
-                <form action="send.php" method="POST" class="contact-form">
-                    <select name="cars" id="cars">
-                        <option value="volvo">Asunto:</option>
-                        <option value="general">General</option>
-                        <option value="peticion">Peticiones</option>
-                        <option value="queja">Quejas</option>
-                        <option value="reclamo">Reclamos</option>
-                        <option value="sugerencia">Sugerencias</option>
-                        <option value="denuncia">Denuncias</option>
+                <form class="contact-form" action="#" method="post">
+                    <select name="cars" id="cars" required>
+                        <option value="">Seleccione asunto</option>
+                        <option>General</option>
+                        <option>Peticiones</option>
+                        <option>Quejas</option>
+                        <option>Reclamos</option>
+                        <option>Sugerencias</option>
+                        <option">Denuncias</option>
                     </select>
                     <input type="text" name="name" placeholder="Nombre" required>
                     <input type="email" name="email" placeholder="Correo electrónico" required>
@@ -392,70 +239,29 @@
                     <img src="img/map.png" alt="Localización de colombia en el mundo">
                 </figure>
             </div>
+            <h3>Visítanos en nuestros locales</h3>
+            <div class="contact">
+                <figure class="contact-google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8788064307687!2d-75.38052018573433!3d6.146975429132419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469f1a53c54947%3A0x2d9b3f7d646cec12!2sCentro%20Comercial%20San%20Nicol%C3%A1s!5e0!3m2!1ses!2sco!4v1615917458877!5m2!1ses!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Calle 43 #54-139 - Rionegro - Antioquia</p>
+                </figure>
+                <figure class="contact-google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.760873167281!2d-75.6953062857367!3d4.811072442031458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388747b25c62d3%3A0xdbfb406a17bc346e!2sVictoria%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1615919859745!5m2!1ses!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Carrera 11 Bis #17-20 - Pereira - Risaralda</p>
+                </figure>
+                <figure class="contact-google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.7397559340357!2d-76.19263668573718!3d4.073351347912972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5cd61dcf83d%3A0x1ca2bf75289f5a96!2sCentro%20Comercial%20Tulu%C3%A1%20LA%2014!5e0!3m2!1ses!2sco!4v1615919709764!5m2!1ses!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Carrera 40 #37/51 Local B-5 - Tuluá - Valle del Cauca</p>
+                </figure>
+            </div>
         </section>
         
         <footer class="footer">
-            <p>Copyright &copy; 2020 The best fruit - All Rights Reserved</p>
+            <p>Copyright &copy;2020-2021 The best fruit - All Rights Reserved</p>
         </footer>
-
-        <div id="modal-cart" class="modal">
-            <!-- <section class="cart">
-                <h2>Carrito de compra</h2>
-                <!-- <hr> -->
-                <div id="transaction" class="transaction">
-                    <table class="order">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Sub Total</th>
-                                <th>Eliminar</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="3">SUB TOTAL :</th>
-                                <th><p id="subtotal"></p>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th colspan="3">IVA:</th>
-                                <th><p id="iva"></p>
-                            </tr>
-                            <tr>
-                                <th colspan="3">TOTAL:</th>
-                                <th>
-                                    <input id="total" name="monto" readonly class="text-center"></input>
-                                </th>
-                            </tr>                            
-                            <tr>
-                                <td colspan="3">
-                                    <button id="close-cart" class="button">Seguir comprando</button>
-                                </td>
-                                <td colspan="3">
-                                    <button id="" class="button">Vaciar carrito</button>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <hr>
-                    <form class="formulario">
-                        <h3 class="order__title">Medios de pagos</h3>
-                        <input type="text" placeholder="Ingrese su nombre">
-                        <input type="email" placeholder="Ingrese su correo electrónico">
-                        <div class="container-btn">
-                            <!-- <button id="close-cart" class="button">Seguir comprando</button> -->
-                            <button class="button">Realizar compra</button>
-                        </div>
-                    </form>
-                </div>
-            </section> -->
-        </div>
-
-        <div id="modal-user" class="modal">
-            <section class="user">
+        
+        <section id="modal-user" class="modal">
+            <article class="user">
                 <figure id="close-user" class="close">
                     <img class="close__img" src="img/close.png" alt="Icono de cerra ventana">
                 </figure>                
@@ -477,12 +283,10 @@
                         <button class="button" type="submit">Registrarme</button>
                     </form>
                 </div>
-            </section>
-        </div>
-
-        <script src="js/sweetalert2.min.js"></script>
+            </article>
+        </section>
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/cart.js"></script>
-        <script src="js/order.js"></script>
     </body>
 </html>

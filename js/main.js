@@ -17,32 +17,15 @@ menu_links.forEach(link => {
     });
 });
 
-// ---------------> MODAL CART --------------->
-
-// const cart = document.getElementById('cart');
-// const modal_cart = document.getElementById('modal-cart');
-// const close_cart = document.getElementById('close-cart');
-// const body = document.querySelector('body');
-
-// cart.addEventListener('click', () => {
-//     modal_cart.classList.add('show-modal');
-//     body.style.overflow = 'hidden';
-// });
-
-// close_cart.addEventListener('click', () => {
-//     modal_cart.classList.remove('show-modal');
-//     body.style.overflow = 'visible';
-// });
-
 // ---------------> MODAL USER --------------->
 
 const user = document.getElementById('user');
 const modal_user = document.getElementById('modal-user');
 const close_user = document.getElementById('close-user');
 
-// user.addEventListener('click', () => {
-//     modal_user.classList.add('show-modal');
-// });
+user.addEventListener('click', () => {
+    modal_user.classList.add('show-modal');
+});
 
 close_user.addEventListener('click', () => {
     modal_user.classList.remove('show-modal')
@@ -68,3 +51,24 @@ tabs.forEach(tab => {
         t.classList.add('active');
     })
 });
+
+const contact_form = document.querySelector('.contact-form')
+
+const send = e => {
+    swal({
+        title: "Mensaje enviado...",
+        text: "Muy pronto lo estaremos contactando!",
+        icon: "success",
+    })
+    clearFields()
+    e.preventDefault()
+}
+
+contact_form.addEventListener('submit', send)
+
+const clearFields = () => {
+    document.getElementsByName('cars')[0].value = ""
+    document.getElementsByName('name')[0].value = ""
+    document.getElementsByName('email')[0].value = ""
+    document.getElementsByName('message')[0].value = ""
+}

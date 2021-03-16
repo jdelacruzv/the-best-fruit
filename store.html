@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Best Fruit</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/store.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <a class="header__brand" href="index.html">The Best Fruit</a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li><a class="menu__link" href="#">Inicio</a></li>
+                    <li><a class="menu__link" href="index.html#productos">Productos</a></li>
+                    <li><a class="menu__link" href="index.html#nosotros">Nosotros</a></li>
+                    <li><a class="menu__link" href="index.html#contacto">Contacto</a></li>
+                    <li>
+                        <a href="#cart" class="menu__link">
+                            <img class="menu__img" src="img/shopping-cart.png" alt="Logo carrito de compras" title="Carrito de compras">
+                        </a>
+                    </li>
+                    <li>
+                        <figure class="flag">
+                            <a href="" class="flag__link menu__link">
+                                <img class="flag__img" src="img/esp.png" alt="Logo redondo de la bandera española" title="Español" style="background-color:  #173d39;">
+                            </a>            
+                            <a href="en/main.html" class="flag__link menu__link">
+                                <img class="flag__img" src="img/eng.png" alt="Logo redondo de la bandera inglesa" title="Inglés">
+                            </a>
+                        </figure>
+                    </li>
+                </ul>
+                <div class="btn-hamburger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="catalog">
+            <h2>Catálogo de productos</h2>
+            <article class="catalog__items">
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mango.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">4.40</span></p>
+                    </div>
+                    <p class="card__text">Pulpa mango congelada 500gr.</p>
+                    <button class="btn btn-info" data-id="1">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/pinia.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">4.40</span></p>
+                    </div>
+                    <p class="card__text">Pulpa piña congelada 500gr.</p>
+                    <button class="btn btn-info" data-id="2">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mora.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">4.40</span></p>
+                    </div>
+                    <p class="card__text">Pulpa mora congelada 500gr.</p>
+                    <button class="btn btn-info" data-id="3">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <span class="card__offer">oferta</span>
+                    <figure class="figure">
+                        <img class="figure__img" src="img/lulo.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">4.40</span></p>
+                    </div>
+                    <p class="card__text">Pulpa lulo congelada 500gr.</p>
+                    <button class="btn btn-info" data-id="4">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mango.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">3.50</span></p>
+                    </div>
+                    <p class="card__text">Pulpa mango congelada 300gr.</p>
+                    <button class="btn btn-info" data-id="5">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/pinia.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">3.50</span></p>
+                    </div>
+                    <p class="card__text">Pulpa piña congelada 300gr.</p>
+                    <button class="btn btn-info" data-id="6">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/mora.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">3.50</span></p>
+                    </div>
+                    <p class="card__text">Pulpa mora congelada 300gr.</p>
+                    <button class="btn btn-info" data-id="7">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <figure class="figure">
+                        <img class="figure__img" src="img/lulo.jpg" alt="">
+                    </figure>
+                    <div class="price">
+                        <p class="coin">$<span class="price__normal">3.50</span></p>
+                    </div>
+                    <p class="card__text">Pulpa lulo congelada 300gr.</p>
+                    <button class="btn btn-info" data-id="8">Agregar al carrito</button>
+                </div>
+            </article>
+            <hr class="line-horizontal">
+        </section>
+
+        <section id="cart" class="cart">
+            <h2>Carrito de compra</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr class="line-horizontal">
+            
+            <template id="template-carrito">
+                <tr>
+                    <th scope="row">id</th>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td><button class="btn btn-info btn-small">+</button>
+                        <button class="btn btn-danger btn-small">-</button>
+                    </td>
+                    <td>$ <span class="subtotal">500</span></td>
+                </tr>
+            </template>
+
+            <template id="template-footer">
+                <th scope="row" colspan="2">Total productos</th>
+                <td></td>
+                <td class="total"></td>
+                <td>
+                    <button class="btn btn-danger btn-medium" id="vaciar-carrito">Vaciar carrito</button>
+                </td>
+                <td class="total">$ <span>5000</span></td>
+            </template>
+        </section>
+    
+        <section class="payments">
+            <h2>Realizar compra</h2>
+            <div class="Payment-methods">
+                <div class="container-pay">
+                    <div class="title-cards">
+                        <input type="radio" checked>
+                        <h3>Tarjeta de crédito</h3>
+                    </div>
+                    <figure class="credit-cards">
+                        <img class="credit-cards__img" src="img/credit-cards.jpg" alt="Tarjetas de crédito">
+                    </figure>
+                </div>
+                <form class="container-form" action="gracias.html" method="post">
+                    <input class="form-details" type="number" name="card-number" placeholder="Número de tarjeta" required>
+                    <input class="form-details"  type="text" name="name-owner" placeholder="Nombre del titular" required>
+                    <div class="date-security">
+                        <input class="form-details date-sec" type="text" name="date" placeholder="Fecha de vencimiento (MM / AA)" required>
+                        <input class="form-details date-sec" type="number" name="code" placeholder="Código de seguridad" required>
+                    </div>
+                    <div class="compra">
+                        <button class="btn btn-danger btn-medium" type="reset">Cancelar</button>
+                        <button class="btn btn-info btn-medium" type="submit">Pagar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+</html>
