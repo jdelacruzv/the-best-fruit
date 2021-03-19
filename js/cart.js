@@ -64,7 +64,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelectorAll('td')[2].textContent = producto.cantidad
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
         templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
-        templateCarrito.querySelector('.subtotal').textContent = (producto.cantidad * producto.precio).toFixed(2)
+        templateCarrito.querySelector('.subtotal').textContent = (producto.cantidad * producto.precio).toFixed(3)
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
     })
@@ -89,7 +89,7 @@ const pintarFooter = () => {
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + (cantidad * precio), 0)
     
     templateFooter.querySelectorAll('td')[1].textContent = nCantidad
-    templateFooter.querySelector('span').textContent = nPrecio.toFixed(2)
+    templateFooter.querySelector('span').textContent = nPrecio.toFixed(3)
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
     footer.appendChild(fragment)

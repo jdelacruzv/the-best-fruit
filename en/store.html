@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Best Fruit</title>
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/store.css"/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/store.css"/>
     </head>
     <body>
         <header class="header">
-            <a class="header__brand" href="index.html">The Best Fruit</a>
+            <a class="header__link" href="index.html"><img class="header__logo" src="img/logo.png" alt="Logo the best fruit">The Best Fruit</a>
             <nav class="header__nav">
                 <ul class="menu">
                     <li><a class="menu__link" href="#">Inicio</a></li>
@@ -47,24 +47,28 @@
                 <div class="card">
                     <span class="card__offer">oferta</span>
                     <figure class="figure">
-                        <img class="figure__img" src="img/mango.jpg" alt="">
+                        <img class="figure__img" src="img/mango.jpg" alt="Fruta mango">
                     </figure>
-                    <div class="price">
-                        <p class="coin">$<span class="price__normal">4.40</span></p>
-                    </div>
                     <p class="card__text">Pulpa mango congelada 500gr.</p>
-                    <button class="btn btn-info" data-id="1">Agregar al carrito</button>
+                    <div class="price">
+                        <span class="price__coin">$</span>
+                        <span class="price__normal">4.40</span>
+                        <span class="price__line">&#45;</span>
+                        <span class="price__old">5.50</span>
+                        <span class="price__offer">-20%</span>
+                    </div>
+                    <button class="btn btn-info" data-id="10000">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <span class="card__offer">oferta</span>
                     <figure class="figure">
-                        <img class="figure__img" src="img/pinia.jpg" alt="">
+                        <img class="figure__img" src="img/pinia.jpg" alt="Fruta piña">
                     </figure>
                     <div class="price">
                         <p class="coin">$<span class="price__normal">4.40</span></p>
                     </div>
                     <p class="card__text">Pulpa piña congelada 500gr.</p>
-                    <button class="btn btn-info" data-id="2">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10001">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <span class="card__offer">oferta</span>
@@ -75,7 +79,7 @@
                         <p class="coin">$<span class="price__normal">4.40</span></p>
                     </div>
                     <p class="card__text">Pulpa mora congelada 500gr.</p>
-                    <button class="btn btn-info" data-id="3">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10002">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <span class="card__offer">oferta</span>
@@ -86,7 +90,7 @@
                         <p class="coin">$<span class="price__normal">4.40</span></p>
                     </div>
                     <p class="card__text">Pulpa lulo congelada 500gr.</p>
-                    <button class="btn btn-info" data-id="4">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10003">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <figure class="figure">
@@ -96,7 +100,7 @@
                         <p class="coin">$<span class="price__normal">3.50</span></p>
                     </div>
                     <p class="card__text">Pulpa mango congelada 300gr.</p>
-                    <button class="btn btn-info" data-id="5">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10004">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <figure class="figure">
@@ -106,7 +110,7 @@
                         <p class="coin">$<span class="price__normal">3.50</span></p>
                     </div>
                     <p class="card__text">Pulpa piña congelada 300gr.</p>
-                    <button class="btn btn-info" data-id="6">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10005">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <figure class="figure">
@@ -116,7 +120,7 @@
                         <p class="coin">$<span class="price__normal">3.50</span></p>
                     </div>
                     <p class="card__text">Pulpa mora congelada 300gr.</p>
-                    <button class="btn btn-info" data-id="7">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10006">Agregar al carrito</button>
                 </div>
                 <div class="card">
                     <figure class="figure">
@@ -126,7 +130,7 @@
                         <p class="coin">$<span class="price__normal">3.50</span></p>
                     </div>
                     <p class="card__text">Pulpa lulo congelada 300gr.</p>
-                    <button class="btn btn-info" data-id="8">Agregar al carrito</button>
+                    <button class="btn btn-info" data-id="10007">Agregar al carrito</button>
                 </div>
             </article>
             <hr class="line-horizontal">
