@@ -13,42 +13,26 @@ body {
     font-size: 16px;
     font-family: 'Akaya Telivigala', 'Source Sans Pro', sans-serif;
     background-color: #744BC525;
-    padding-top: 70px;
-}
-
-h1, h2, h3, h4, p {
-    color: #555555;
-}
-
-h1, h2 {
-    text-align: center;
-    letter-spacing: 3px;
-    padding: 0.6rem 0;
+    padding-top: 60px;
 }
 
 h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 0.6rem 0;
     font-size: 2.5rem;
+    color: #555555;
 }
 
 .line-horizontal {
     margin: 3rem 0;
 }
 
-.btn {
-    width: 11rem;
-    background-color: DodgerBlue;
-    border: none;
-    color: #ffffff;  
-    padding: 0.5rem 1rem;
-    font-size: 1rem; 
-    cursor: pointer;
-}
-
 /* ==================== HEADER ==================== */
 
 .header {
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: #184d47;
     position: fixed;
     top: 0;
@@ -71,7 +55,7 @@ h2 {
 }
 
 .header__logo {
-    width: 50px;
+    width: 40px;
     margin-right: 3px;
 }
 
@@ -80,7 +64,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-right: 1.3rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .menu {
@@ -257,8 +241,8 @@ h2 {
     align-items: center;
 }
 
-.main-content h1, 
-.main-content h3 {  
+.main-content__title, 
+.main-content__slogan {  
     margin: 0;
     padding: 0;
     font-weight: bold;         
@@ -266,13 +250,15 @@ h2 {
     text-align: center;
 }
 
-.main-content h1 {          
+.main-content__title {          
     font-size: 8vw;
+    /* font-size: 7rem; */
     color: #ffffff;
 }
 
-.main-content h3 {
+.main-content__slogan {
     font-size: 2vw;    
+    /* font-size: 2rem;     */
     color: #adeecf;
     margin-bottom: 40px;
 }
@@ -321,11 +307,13 @@ h2 {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 1.5rem;
+    color: #555555;
 }
 
 .product-description {
     line-height: 1.5rem;
     text-align: justify;
+    color: #555555
 }
 
 .product-container_image {
@@ -350,26 +338,26 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 5%;
+    padding-top: 3rem;
 }
 
 .export-text {
-    width: 50%;
+    width: 54%;
     height: inherit;
 }
 
 .export-description {
     line-height: 1.5rem;
     text-align: justify;
+    color: #555555
 }
 
-.export-description a {
+.export-link {
     text-decoration: none;
 }
 
 .export-container_image {
-    width: 46%;
+    width: 42%;
     margin: 0;
 }
 
@@ -393,6 +381,7 @@ h2 {
 .about__company {
     text-align : justify;
     line-height: 1.9rem;
+    color: #555555
 }
 
 .about__details {
@@ -418,11 +407,13 @@ h2 {
     margin: 1.9rem 0;
     font-size: 1.5rem;
     letter-spacing: 2px;
+    color: #555555;
 }
 
 .mision-vision__text {
     line-height: 2rem;
     text-align: justify;
+    color: #555555
 }
 
 .about-target {
@@ -437,25 +428,29 @@ h2 {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
+    color: #555555;
 }
 
 .target {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .target__container {
-    width: 30%;
+    width: 20%;
+}
+
+.target__container-img {
+    width: 100%;
+    height: 100%;
 }
 
 .target__text {
-    width: 64%;
+    width: 74%;
 }
 
-.target__text-list {
+.target__description {
     line-height: 1.5rem;
     text-align: justify;
     margin: 1rem 0;
@@ -466,6 +461,7 @@ h2 {
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 2px;
+    color: #555555;
 }
 
 .about-political__description {
@@ -486,6 +482,7 @@ h2 {
     letter-spacing: 2px;
     text-align: center;
     font-size: 1.125rem;
+    color: #555555;
 }
 
 .political__container {
@@ -512,7 +509,7 @@ h2 {
 }
 
 .contacts h2 {
-    color: #ebf3f5;
+    color: #ffffff;
     padding-bottom: 5%;
 }
 
@@ -521,7 +518,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 2rem;
-    color: #ebf3f5;
 }
 
 .contact-form {
@@ -550,8 +546,12 @@ textarea {
 }
 
 .btn-submit {
-    padding: 0.5rem 2.5rem;
+    background-color: DodgerBlue;
+    color: #ffffff;   
+    border: none;
+    cursor: pointer;
     font-size: 1.3rem; 
+    padding: 0.5rem 2.5rem;
     margin: 0.5rem 0 2rem 0;
 }
 
@@ -574,7 +574,6 @@ textarea {
 
 .contact-menu__text {
     font-size: 1rem;
-    /* color: #ebf3f5; */
     color: #999999;
     margin-left: 5px;
     line-height: 155%;
@@ -591,8 +590,8 @@ textarea {
 .google-maps__title {
     text-align: center;
     letter-spacing: 3px;
-    color: #ebf3f5;
     font-size: 1.8rem;
+    color: #ffffff;
 }
 .google-maps__container {
     display: flex;
@@ -632,41 +631,55 @@ textarea {
 
 .copyright {
     text-align: center;
-    color: #ebf3f5;
+    color: #ffffff;
     font-size: bold;
     margin: auto;
 }
 
 /* ==================== MEDIA QUERIES ==================== */
 
-@media screen and (max-width: 1024px) {
-    .header__link {
-        font-size: 1.3rem;
-        margin-left: 0.8rem;
+@media screen and (max-width: 865px) {
+    .products,
+    .exports,
+    .about-us,
+    .contacts {
+        padding-top: 3.5rem;
     }
 
-    .header__logo {
-        width: 40px;
+    .product,
+    .export {
+        display: block;
     }
 
-    .header__nav {
-        margin-right: 0.8rem;
+    .product-text,
+    .product-container_image,
+    .export-text,
+    .export-container_image {
+        width: auto;
+        padding: 1rem 0;
+    }
+
+    .product-title {
+        text-align: center;
+    }
+
+    .about-details,
+    .target {
+        display: block;
+    }
+
+    .mision-vision,
+    .target__container,
+    .target__text {
+        width: auto;
+    } 
+
+    .target__description {
+        margin-top: 2.5rem;
     }
 }
 
-@media screen and (max-width: 865px) {
-    body {
-        padding-top: 50px;
-    }
-
-    .header {
-        height: 50px;
-    }
-
-    .header__nav {
-        font-size: 1rem;
-    }
-
+@media screen and (max-width: 768px) {
     .btn-hamburger {
         display: block;
     }
@@ -702,51 +715,6 @@ textarea {
         margin: 0;
     }
 
-    .products,
-    .exports,
-    .about-us,
-    .contacts {
-        padding-top: 3rem;
-    }
-
-    .product,
-    .export {
-        display: block;
-    }
-
-    .product-text,
-    .product-container_image,
-    .export-text,
-    .export-container_image {
-        width: auto;
-        padding: 1rem 0;
-    }
-
-    .product-title {
-        text-align: center;
-    }
-
-    .about-details,
-    .target {
-        display: block;
-    }
-
-    .mision-vision,
-    .target__container,
-    .target__text {
-        width: auto;
-    } 
-
-    .target__text-list {
-        margin-top: 2.5rem;
-    }
-
-    .footer {
-        padding: 1rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
     h2 {
         font-size: 1.5rem;
     }
@@ -784,7 +752,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 758px) {
     .contact-menu {
         align-items: center;
         margin-top: 1rem;
@@ -796,12 +764,28 @@ textarea {
 }
 
 @media screen and (max-width: 575px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .header__link {
+        font-size: 1.2rem;
+    }
+
+    .header__logo {
+        width: 30px;
+    }
+
     .products,
     .exports,
     .about-us,
     .contacts {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
     }
 
     .contact-menu {
@@ -829,7 +813,21 @@ textarea {
 }
 
 @media screen and (max-width: 452px) {
+    .main-content__title ,
+    .main-content__slogan {
+        display: none;
+    }
+
+    .products,
+    .exports,
+    .about-us,
+    .contacts {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     .footer {
+        padding: 0.8rem;
         font-size: 0.6rem;
         flex-direction: column;
     }
@@ -837,13 +835,13 @@ textarea {
 
 @media screen and (max-width: 370px) {
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .product-title,
     .mision-vision__title,
     .about-target__title,
     .about-political__title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
