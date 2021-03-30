@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    font-family: 'Akaya Telivigala', cursive;
 }
 
 html {
@@ -12,8 +10,10 @@ html {
 }
 
 body {
-    padding-top: 70px;
     font-size: 16px;
+    font-family: 'Akaya Telivigala', 'Source Sans Pro', sans-serif;
+    background-color: #744BC525;
+    padding-top: 70px;
 }
 
 h1, h2, h3, h4, p {
@@ -35,6 +35,7 @@ h2 {
 }
 
 .btn {
+    width: 11rem;
     background-color: DodgerBlue;
     border: none;
     color: #ffffff;  
@@ -79,6 +80,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-right: 1.3rem;
+    font-size: 0.8rem;
 }
 
 .menu {
@@ -91,9 +93,11 @@ h2 {
 .menu__link {
     text-decoration: none;
     color: #ebf3f5;
-    padding: 0.5rem 0.8rem;
-    /* font-size: 1.2rem; */
+    padding: 0.5rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__link:hover, .menu__link:active {
@@ -111,6 +115,48 @@ h2 {
     width: 25px;
     height: 25px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-user {
+    text-decoration: none;
+    text-align: center;
+    color: #999999;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    background-color: #ffffff;
+    width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-content_link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #444444;
+    padding: 0.8rem 0.5rem;
+}
+
+.separator {
+    width: 2rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .flag {
     display: flex;
@@ -256,8 +302,7 @@ h2 {
 /* ==================== PRODUCTS ==================== */
 
 .products {
-    padding: 4.8rem 3.2rem 0px 3.2rem;
-    /* border: 2px solid red; */
+    padding: 4.8rem 3.2rem 0 3.2rem;
 }
 
 .product {
@@ -268,7 +313,7 @@ h2 {
 }
 
 .product-text {
-    width: 68%;
+    width: 58%;
     height: inherit;
 }
 
@@ -284,7 +329,8 @@ h2 {
 }
 
 .product-container_image {
-    width: 28%;
+    width: 38%;
+    height: inherit;
     margin: 0;
 }
 
@@ -301,21 +347,20 @@ h2 {
 }
 
 .export {
-    padding: 3.8rem 6.3rem 0px 6.3rem;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5%;
 }
 
 .export-text {
-    width: 46%;
+    width: 50%;
     height: inherit;
 }
 
 .export-description {
-    /* font-size: 1.1rem; */
+    line-height: 1.5rem;
     text-align: justify;
 }
 
@@ -324,7 +369,7 @@ h2 {
 }
 
 .export-container_image {
-    width: 50%;
+    width: 46%;
     margin: 0;
 }
 
@@ -337,126 +382,126 @@ h2 {
 /* ==================== ABOUT-US ==================== */
 
 .about-us {
-    padding: 4.8rem 3.2rem 0px 3.2rem;
-    /* border: 2px solid blue; */
+    padding: 4.8rem 3.2rem 0 3.2rem;
 }
 
 .about {
-    padding: 3.8rem 6.3rem 0px 6.3rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
-.about-company {
+.about__company {
     text-align : justify;
     line-height: 1.9rem;
-    /* font-size: 1.2rem; */
 }
 
-.about-company_details {
+.about__details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.about-mision_vision {
-    width: 45%;
+.mision-vision {
+    width: 40%;
 }
 
-.about-mision_vision-figure {
+.mision-vision__container {
     width: 100px;
     margin: auto;
 }
 
-.about-mision_vision__img {
+.mision-vision__img {
     width: 100%;
 }
 
-.about-mision_vision h3,
-.about-company_objectives h3 {
+.mision-vision__title {
     margin: 1.9rem 0;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
 
-.about-mision_vision p {
+.mision-vision__text {
     line-height: 2rem;
     text-align: justify;
-    /* font-size: 1.1rem; */
 }
 
-.about-company_objectives {
+.about-target {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.about-company_container {
+.about-target__title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.target {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.about-company_figure {
-    width: 40%;
+.target__container {
+    width: 30%;
 }
 
-.about-company_text {
-    width: 60%;
+.target__text {
+    width: 64%;
 }
 
-.about-company_text li {
-    line-height: 2rem;
-    /* font-size: 1.1rem; */
+.target__text-list {
+    line-height: 1.5rem;
     text-align: justify;
     margin: 1rem 0;
     color: #555555;
 }
 
-.about-political {
-    padding: 0 6rem;
-}
-
-.about-political h3 {
+.about-political__title {
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.about-political_description {
+.about-political__description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 3%;
+    color: #555555;
 }
 
-.about-political_details {
+.political {
     width: 46%;
     text-align: justify;
 }
 
-.about-political_details h4 {
+.political__title {
     padding: 0.63rem 0px 1.3rem 0px;
     letter-spacing: 2px;
     text-align: center;
     font-size: 1.125rem;
 }
 
-.about-political_figure {
+.political__container {
     width: 35px;
     height: 35px;
     margin: 0 auto 1rem auto;
 }
 
-.about-political_figure__img {
+.political__img {
     width: 100%;
 }
 
-/* .about-political_details p {
-    font-size: 1rem;
-} */
+.political__text {
+    list-style: none;
+    line-height: 1.5rem;
+}
 
 /* ==================== CONTACTS ==================== */
 
@@ -507,7 +552,7 @@ textarea {
 .btn-submit {
     padding: 0.5rem 2.5rem;
     font-size: 1.3rem; 
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 2rem 0;
 }
 
 .contact-menu {
@@ -516,218 +561,114 @@ textarea {
     margin: 0 2rem;
 }
 
-.contact-menu li {
+.contact-menu__list {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-.contact-menu li img {
+.contact-menu__list img {
     width: 15px;
     height: 15px;
 }
 
-.contact-menu li p {
+.contact-menu__text {
     font-size: 1rem;
-    color: #ebf3f5;
+    /* color: #ebf3f5; */
+    color: #999999;
     margin-left: 5px;
-    /* line-height: 155%; */
+    line-height: 155%;
 }
 
-.contact-map {
-    width: 25%
+.contact-earth {
+    width: 350px;
 }
 
-.contact-map img {
+.contact-earth__img {
     width: 100%;
 }
 
-.contacts h3 {
+.google-maps__title {
     text-align: center;
     letter-spacing: 3px;
-    margin-top: 1rem;
-    margin-bottom: 3%;
     color: #ebf3f5;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+.google-maps__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
 }
 
-/* .contact-google-map {
-    width: 25%;
-    padding-top: 0;
-} */
+.google-maps {
+    width: 350px;
+    height: 250px;
+    margin-top: 2rem;
+}
 
-.contact-google-map p {
+.google-maps__link {
+    width: 100%;
+    height: 100%;
+}
+
+.google-maps__address {
     color: #ffffff;
     text-align: center;
+    font-size: 0.7rem;
 }
 
 /* ==================== FOOTER ==================== */
 
 .footer {
     background-color: #000000;
-    color: #ffffff;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     font-size: 0.8rem;
     letter-spacing: 1px;
-}
-
-.footer p {
-    text-align: center;
-    color: #ffffff;
-    font-size: bold;
-}
-
-/* ==================== MODAL ==================== */
-
-.modal {
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Controla si puede o no recibir eventos del cursor */
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-	width: 100vw;
-	height: 100vh; 
-    overflow: auto; 
-    z-index: 800;
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show-modal {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-/* ==================== USER ==================== */
-
-.user {
-    width: 100%;
-    max-width: 360px;
-    padding: 10px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 100px auto 0 auto;
-    border: 1px solid #10643d;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #10643d;
-    background-color: #ffffff;
-}
-
-.close {
-    margin: auto;
-}
-
-.close__img {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-}
-
-.close__img:hover {
-    opacity: 0.5;
-}
-
-.tab {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 20px;
+    line-height: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.tab__menu {
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.form__input {
-    border: 1px solid gray; 
-}
-
-.btn-login {
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-.form__recover {
-    color: red;
-    font-size: 14px;
-    margin: 8px 0;
+.copyright {
     text-align: center;
-    cursor: pointer;
-}
-
-[data-target] {
-    color: #999999;
-}
-
-.focus[data-target] {
-    color: #000000;
-}
-
-[data-content] {
-    display: none;
-}
-
-.active[data-content] {
-    display: block;
-}
-
-/* ==================== WRAPPER ==================== */
-
-.wrapper {
-    max-width: 1024px; 
-    flex: 1; 
-    height: inherit;
-    margin: 0 auto;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-    align-items: inherit;
+    color: #ebf3f5;
+    font-size: bold;
+    margin: auto;
 }
 
 /* ==================== MEDIA QUERIES ==================== */
 
-@media screen and (max-width: 950px) {
-    .product {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1024px) {
+    .header__link {
+        font-size: 1.3rem;
+        margin-left: 0.8rem;
     }
 
-    .product-text {
-        width: 100%;
-        margin-bottom: 5%;
+    .header__logo {
+        width: 40px;
     }
 
-    .product-title {
-        text-align: center;
-    }
-
-    .product-container_image {
-        width: 60%;
+    .header__nav {
+        margin-right: 0.8rem;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        padding: 0 1rem;
+@media screen and (max-width: 865px) {
+    body {
+        padding-top: 50px;
     }
 
-    .header__brand, .container-btn  {
-        margin: 0;
+    .header {
+        height: 50px;
+    }
+
+    .header__nav {
+        font-size: 1rem;
     }
 
     .btn-hamburger {
         display: block;
-        margin-left: 0.5rem;
     }
 
     .menu {
@@ -740,55 +681,64 @@ textarea {
         width: 100vw;
         height: 100vh;
         background-color:rgba(41, 41, 41, 0.9);
-        text-align: center;
         transition: all 1s;
-        /* flex-direction: column; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu.show {
         display: block;
-        top: 70px;
+        top: 50px;
     }
 
-    .menu__items {
+    .menu__link,
+    .dropdown-user {
         padding: 0.8rem 0;
     }
 
-    .menu__link {
-        font-size: 1.5rem;
+    .flag {
+        margin: 0;
     }
 
-    .products {
-        padding: 3.8rem 2.5rem 0px 2.5rem;
+    .products,
+    .exports,
+    .about-us,
+    .contacts {
+        padding-top: 3rem;
     }
 
-    .product-container_image {
-        margin-bottom: 5%;
+    .product,
+    .export {
+        display: block;
     }
 
-    .contact {
-        flex-direction: column;
-        align-items: center;
+    .product-text,
+    .product-container_image,
+    .export-text,
+    .export-container_image {
+        width: auto;
+        padding: 1rem 0;
     }
 
-    .contact-form {
-        width: 100%;
-    }
-
-    .contact-menu {
-        margin: 3rem 0;
-    }
-
-    .contact-menu li {
-        justify-content: center;
-    }
-
-    .contact-menu li p {
+    .product-title {
         text-align: center;
     }
 
-    .contact-map {
-        width: 60%;
+    .about-details,
+    .target {
+        display: block;
+    }
+
+    .mision-vision,
+    .target__container,
+    .target__text {
+        width: auto;
+    } 
+
+    .target__text-list {
+        margin-top: 2.5rem;
     }
 
     .footer {
@@ -796,6 +746,104 @@ textarea {
     }
 }
 
-@media screen and (max-width: 300px) {
-    
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-title,
+    .mision-vision__title,
+    .about-target__title,
+    .about-political__title {
+        font-size: 1.2rem;
+    }
+
+    .product-description,
+    .export-description,
+    .about__company,
+    .mision-vision__text,
+    .target__text,
+    .political__text {
+        font-size: 0.8rem;
+    }
+
+    .political__title {
+        font-size: 1rem;
+    }
+
+    .about-political__description {
+        display: block;
+    }
+
+    .political {
+        width: auto;
+    }
+
+    .political__text {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .contact-menu {
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .contact-earth {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .products,
+    .exports,
+    .about-us,
+    .contacts {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contact-menu {
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 25px;
+    }
+
+    .contact-menu__text {
+        font-size: 0.8rem;
+    }
+
+    .google-maps__title {
+        font-size: 1.3rem;
+    }
+
+    .google-maps__container {
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .footer {
+        font-size: 0.6rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .product-title,
+    .mision-vision__title,
+    .about-target__title,
+    .about-political__title {
+        font-size: 1rem;
+    }
 }
