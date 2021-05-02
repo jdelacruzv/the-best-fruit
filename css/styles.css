@@ -780,6 +780,20 @@ textarea {
         width: 30px;
     }
 
+    .main {
+        height: calc(100vh - 50px);
+    }
+
+    .main-content__title {
+        display: none;
+    }
+
+    .main-content__slogan {
+        font-size: 1.2rem;
+        color:#ffffff;
+        margin: 0 1rem;
+    }
+
     .products,
     .exports,
     .about-us,
@@ -813,11 +827,6 @@ textarea {
 }
 
 @media screen and (max-width: 452px) {
-    .main-content__title ,
-    .main-content__slogan {
-        display: none;
-    }
-
     .products,
     .exports,
     .about-us,
